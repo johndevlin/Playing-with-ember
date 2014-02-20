@@ -1,8 +1,11 @@
+
+// Populate app with data (below)
 App.Todo = DS.Model.extend({
 	title: DS.attr('string'),
 	isCompleted: DS.attr('boolean')
 });
 
+// Todo app data
 App.Todo.FIXTURES = [
 	{
 		id: 1,

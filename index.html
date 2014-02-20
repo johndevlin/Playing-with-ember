@@ -118,7 +118,7 @@
 
 			<header id="header">
 
-				<input type="text" id="new-todo" placeholder="What needs to be done?" />
+				{{input type="text" id="new-todo" placeholder="What needs to be done?" value=newTitle action="createTodo"}}
 
 			</header>
 
@@ -127,10 +127,10 @@
 
 				<ul id="todo-list">
 
-					{{#each}}
-						<li>
+					{{#each itemController="todo"}}
+						<li {{bind-attr class="isCompleted:completed"}}>
 
-							<input type="checkbox" class="toggle">
+							{{input type="checkbox" checked=isCompleted class="toggle"}}
 							<label>{{title}}</label>
 							<button class="destroy"></button>
 
@@ -167,7 +167,7 @@
 				</button>
 
 			</footer>
-			
+
 		</section>
 
 	</script>
@@ -181,6 +181,8 @@
 	<script src="js/app.js"></script>
 	<script src="js/router.js"></script>
 	<script src="js/models/todo.js"></script>
+	<script src="js/controllers/todos-controller.js"></script>
+	<script src="js/controllers/todo-controller.js"></script>
 
 	<!-- to activate the test runner, add the "?test" query string parameter -->
 	<script src="tests/runner.js"></script>
