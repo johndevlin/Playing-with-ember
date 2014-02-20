@@ -122,14 +122,17 @@
 
 			</header>
 
+
 			<section id="main">
+
 				<ul id="todo-list">
 
 					{{#each}}
 						<li>
 
 							<input type="checkbox" class="toggle">
-							<label>{{title}}</label><button class="destroy"></button>
+							<label>{{title}}</label>
+							<button class="destroy"></button>
 
 						</li>
 					{{/each}}
@@ -137,12 +140,16 @@
 				</ul>
 
 				<input type="checkbox" id="toggle-all">
+
 			</section>
 
+
 			<footer id="footer">
+
 				<span id="todo-count">
 					<strong>2</strong> todos left
 				</span>
+
 				<ul id="filters">
 					<li>
 						<a href="all" class="selected">All</a>
@@ -158,7 +165,9 @@
 				<button id="clear-completed">
 					Clear completed (1)
 				</button>
+
 			</footer>
+			
 		</section>
 
 	</script>
