@@ -14,12 +14,12 @@ App.Todo.FIXTURES = [
 	},
 	{
 		id: 2,
-		title: 'Uncompleted item number one',
+		title: 'Incomplete item number one',
 		isCompleted: false
 	},
 	{
 		id: 3,
-		title: 'Uncompleted item number two',
+		title: 'Incomplete item number two',
 		isCompleted: false
 	}
 ];

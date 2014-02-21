@@ -19,5 +19,16 @@ App.TodosController = Ember.ArrayController.extend({
 			todo.save();
 			
 		}
-	}
+	},
+	
+	// Count completed todos 
+	remaining: function() {
+		return this.filterBy('isCompleted', false).get('length');
+	}.property('@each.isCompleted'),
+
+	// Print the number of uncompleted todos 
+	inflection: function() {
+		var remaining = this.get('remaining');
+		return remaining === 1 ? 'item' : 'items';
+	}.property('remaining')
 });
