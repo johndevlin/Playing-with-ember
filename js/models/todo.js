@@ -9,17 +9,17 @@ App.Todo = DS.Model.extend({
 App.Todo.FIXTURES = [
 	{
 		id: 1,
-		title: 'Completed item',
+		title: 'Create a Github repo',
 		isCompleted: true
 	},
 	{
 		id: 2,
-		title: 'Incomplete item number one',
+		title: 'Learn Ember',
 		isCompleted: false
 	},
 	{
 		id: 3,
-		title: 'Incomplete item number two',
+		title: 'Finish todo app',
 		isCompleted: false
 	}
 ];
